@@ -24,6 +24,19 @@ app.post("/", async (req, res) => {
   res.send(person);
 }); // Enviando dados para o servidor
 
+app.delete("/:id", async (req, res) => {
+  const person = await Person.findByIdAndDelete(req.params.id);
+  return res.send(person);
+}); // Deleta um usuário do banco de dados
+
+app.put("/:id", async (req, res) => {
+  const person = await Person.findByIdAndUpdate(req.params.id, {
+    nome: req.body.nome,
+  });
+
+  return res.send(person);
+}); // Atualiza uma pessoa pelo seu ID
+
 app.listen(port, () => {
   mongoose.connect("database login");
   console.log(`Server is Running in ${port}`);

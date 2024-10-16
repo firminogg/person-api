@@ -35,8 +35,10 @@ Don't forget to connect to your database account.
 
 ## :sparkles: Features
 
-:heavy_check_mark: GET in Server
-:heavy_check_mark: POST in Server
+:heavy_check_mark: [GET] in Server
+:heavy_check_mark: [POST] in Server
+:heavy_check_mark: [DELETE] in Server
+:heavy_check_mark: [PUT] in Server
 
 ## :rocket: Technologies
 
