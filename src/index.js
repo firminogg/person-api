@@ -25,8 +25,6 @@ app.post("/", async (req, res) => {
 }); // Enviando dados para o servidor
 
 app.listen(port, () => {
-  mongoose.connect(
-    "mongodb+srv://firminosteam:7o7m5TUXtXBY45SR@api-videos-nodejs.kctx0.mongodb.net/?retryWrites=true&w=majority&appName=api-videos-nodejs"
-  );
+  mongoose.connect("database login");
   console.log(`Server is Running in ${port}`);
 });
