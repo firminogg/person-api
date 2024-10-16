@@ -6,7 +6,11 @@ app.use(express.json()); // Faz com que o servidor consiga receber requisições
 
 const Person = mongoose.model("Person", {
   nome: String,
-});
+  cpf: String,
+  phone: Number,
+  country: String,
+  learning: String,
+}); // Cria o modelo da pessoa em nosso banco de dados
 
 const port = 3000; // Instala uma porta no nosso servidor
 
@@ -32,6 +36,10 @@ app.delete("/:id", async (req, res) => {
 app.put("/:id", async (req, res) => {
   const person = await Person.findByIdAndUpdate(req.params.id, {
     nome: req.body.nome,
+    cpf: req.body.cpf,
+    phone: req.body.phone,
+    country: req.body.county,
+    learning: req.body.learning,
   });
 
   return res.send(person);
@@ -39,5 +47,8 @@ app.put("/:id", async (req, res) => {
 
 app.listen(port, () => {
   mongoose.connect("database login");
-  console.log(`Server is Running in ${port}`);
+  console.log(`
+    Successfully logged into the database!
+    Server is Start in ${port}
+    `);
 });

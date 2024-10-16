@@ -33,12 +33,27 @@
 Have a local user creation API with just the name, generating a unique ID.
 Don't forget to connect to your database account.
 
+{
+nome: String,
+cpf: String,
+phone: Number,
+country: String,
+learning: String,
+}
+
 ## :sparkles: Features
 
-:heavy_check_mark: [GET] in Server
-:heavy_check_mark: [POST] in Server
-:heavy_check_mark: [DELETE] in Server
-:heavy_check_mark: [PUT] in Server
+:heavy_check_mark:
+[GET] in Server
+
+:heavy_check_mark:
+[POST] in Server
+
+:heavy_check_mark:
+[DELETE] in Server
+
+:heavy_check_mark:
+[PUT] in Server
 
 ## :rocket: Technologies
 
