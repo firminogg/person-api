@@ -1,0 +1,15 @@
+{
+  "name": "api-nodejs",
+  "version": "1.0.0",
+  "description": "API em NodeJS e MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hash",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  }
+}
